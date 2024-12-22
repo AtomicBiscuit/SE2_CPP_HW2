@@ -8,11 +8,7 @@
 
 Пример:
 ```C
---p-type=FIXED(64,8)
---v-type=FAST_FIXED(25,11)
---v-flow-type=DOUBLE
---field=../field.txt
---save-field=../test.txt
+./SE2_CPP_HW2 --p-type=FIXED\(64,8\) --v-type=FAST_FIXED\(25,11\) --v-flow-type=DOUBLE --field=field.txt --save-field=test.txt
 ```
 
 Пример возможных опций компилятора указан в файле сборки `CMakeLists.txt`
