@@ -69,7 +69,7 @@ namespace Emulator {
     /// Alias для get_type_impl<n>::type
     /// \tparam n Число, которым закодирован тип
     template<int n>
-    using get_type = details::get_type_impl<n>::type;
+    using get_type = typename details::get_type_impl<n>::type;
 
     /// В compile-time заполняет массив из ВСЕХ ВОЗМОЖНЫХ комбинации 3-х типов данных и размеров поля(включая "динамический")
     /// \return Массив из пятерок int: первые 3 - типы данных, последние 2 - размеры поля

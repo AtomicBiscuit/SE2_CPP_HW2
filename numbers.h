@@ -25,7 +25,7 @@ namespace Emulator {
     };
 
     template<int N, bool is_fast>
-    using real_type_t = real_type<N, is_fast>::type;
+    using real_type_t = typename real_type<N, is_fast>::type;
 
     template<int N, int K, bool fast = false> requires(K >= 0)
     struct Fixed {

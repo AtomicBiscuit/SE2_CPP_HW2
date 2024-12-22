@@ -106,8 +106,8 @@ namespace Emulator {
             dirs.init(N, K);
             old_p.init(N, K);
 
-            rho[' '] = 0.01;
-            rho['.'] = int64_t(1000);
+            rho[int(' ')] = 0.01;
+            rho[int('.')] = int64_t(1000);
             for (int x = 0; x < N; ++x) {
                 for (int y = 0; y < K; ++y) {
                     if (field[x][y] == '#')
