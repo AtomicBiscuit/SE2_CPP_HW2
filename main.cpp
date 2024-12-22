@@ -1,11 +1,12 @@
-#include "field.h"
-#include "fields_factory.h"
-#include "argument.h"
+#include "include/field.h"
+#include "include/fields_factory.h"
+#include "include/argument.h"
 
 #include <vector>
 #include <string>
 #include <fstream>
 #include <csignal>
+#include <iostream>
 
 std::tuple<int, int, int> read_field_params(const std::string &path) {
     std::ifstream in(path);
